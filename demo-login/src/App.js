@@ -6,25 +6,25 @@ function App() {
       <div>
         <ul>
           <li>
-            <Link to='/'>Home</Link>
+            <Link to='/trang-chu'>Home</Link>
           </li>
           <li>
             <Link to='/about'>About</Link>
           </li>
           <li>
-            <Link to='/trang-home'>Dashboard</Link>
+            <Link to='/quan-li'>Dashboard</Link>
           </li>
         </ul>
 
         <hr />
         <Switch>
-          <Route exact path='/'>
+          <Route exact path='/trang-chu'>
             <Home />
           </Route>
           <Route path='/about'>
             <About />
           </Route>
-          <Route path='/trang-home'>
+          <Route path='/quan-li'>
             <Dashboard />
           </Route>
           <Route path='*'>
