@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom'
 
 function App() {
   return (
@@ -27,9 +27,9 @@ function App() {
           <Route path='/quan-li'>
             <Dashboard />
           </Route>
-          <Route path='*'>
-            <NotFound />
-          </Route>
+          {/* <Redirect from='/' to='/trang-chu' /> */}
+          <Route component={NotFound} />
+          <Redirect from='/' to='/trang-chu' />
         </Switch>
       </div>
     </Router>
